@@ -36,3 +36,9 @@ To deploy bove mentioned application, run following commands:
    kubectl apply -f ingress-nginx redis-deploy.yaml
    kubectl apply -f ingress-nginx redis-service.yaml
    kubectl apply -f ingress-nginx redis-ingress.yaml
+
+<img width="893" alt="image" src="https://github.com/ajaykangare1993/avlr-sda-demo/assets/169615774/32e9e1bf-cf4c-4bcd-b98e-147bbe936490">
+<img width="1470" alt="image" src="https://github.com/ajaykangare1993/avlr-sda-demo/assets/169615774/afdf42ab-68b2-4264-8502-9428fc649a76">
+<img width="762" alt="image" src="https://github.com/ajaykangare1993/avlr-sda-demo/assets/169615774/cb7111b3-5aa0-4397-8dda-f2cfb65b853e">
+
+
