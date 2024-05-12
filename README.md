@@ -17,6 +17,22 @@ To deploy bove mentioned application, run following commands:
        --set defaultBackend.nodeSelector."kubernetes\.io/os"=linux \
        --set defaultBackend.image.digest="" 
     
-3. Deploy Primary Application
-4. Deploy Canary Application
+2. Deploy Primary Application
+
+   kubectl apply -f ingress-nginx primary-deploy.yaml
+   kubectl apply -f ingress-nginx primary-service.yaml
+   kubectl apply -f ingress-nginx primary-ingress.yaml
+   
+3. Deploy Canary Application
+
+   kubectl apply -f ingress-nginx canary-deploy.yaml
+   kubectl apply -f ingress-nginx canary-service.yaml
+   kubectl apply -f ingress-nginx canary-ingress.yaml
+ 
 5. Deploy Redis
+
+   kubectl apply -f ingress-nginx redis-conf.yaml
+   kubectl apply -f ingress-nginx redis-pvc.yaml
+   kubectl apply -f ingress-nginx redis-deploy.yaml
+   kubectl apply -f ingress-nginx redis-service.yaml
+   kubectl apply -f ingress-nginx redis-ingress.yaml
